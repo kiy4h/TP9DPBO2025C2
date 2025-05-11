@@ -75,4 +75,7 @@ Untuk menjalankan aplikasi ini secara lokal, lakukan langkah-langkah berikut:
    ```
 
 # Dokumentasi
-belum ada :>
+
+
+https://github.com/user-attachments/assets/414c4f3a-6cdd-42a2-8e5c-ab05b788c5ea
+
