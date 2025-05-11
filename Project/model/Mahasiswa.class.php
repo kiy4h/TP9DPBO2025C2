@@ -5,72 +5,74 @@
 ******************************************/
 
 // Kelas yang menggambarkan detail sebuah mahasiswa dengan atribut-atributnya
-class Mahasiswa
-{
-	var $id = '';
-	var $nim = '';
-	var $nama = '';
-	var $tempat = '';
-	var $tl = '';
-	var $gender = '';
+class Mahasiswa {
+    public $id     = '';
+    public $nim    = '';
+    public $nama   = '';
+    public $tempat = '';
+    public $tl     = '';
+    public $gender = '';
+    public $email  = ''; // Tambahan atribut email
+    public $telp   = ''; // Tambahan atribut telepon
 
-	function __construct($id = '', $nim = '', $nama = '', $tempat = '', $tl = '', $gender = '')
-	{
-		$this->id = $id;
-		$this->nim = $nim;
-		$this->nama = $nama;
-		$this->tempat = $tempat;
-		$this->tl = $tl;
-		$this->gender = $gender;
-	}
+    public function __construct($id = '', $nim = '', $nama = '', $tempat = '', $tl = '', $gender = '', $email = '', $telp = '') {
+        $this->id     = $id;
+        $this->nim    = $nim;
+        $this->nama   = $nama;
+        $this->tempat = $tempat;
+        $this->tl     = $tl;
+        $this->gender = $gender;
+        $this->email  = $email;
+        $this->telp   = $telp;
+    }
 
-	function setId($id)
-	{
-		$this->id = $id;
-	}
-	function setNim($nim)
-	{
-		$this->nim = $nim;
-	}
-	function setNama($nama)
-	{
-		$this->nama = $nama;
-	}
-	function setTempat($tempat)
-	{
-		$this->tempat = $tempat;
-	}
-	function setTl($tl)
-	{
-		$this->tl = $tl;
-	}
-	function setGender($gender)
-	{
-		$this->gender = $gender;
-	}
+    public function setId($id) {
+        $this->id = $id;
+    }
+    public function setNim($nim) {
+        $this->nim = $nim;
+    }
+    public function setNama($nama) {
+        $this->nama = $nama;
+    }
+    public function setTempat($tempat) {
+        $this->tempat = $tempat;
+    }
+    public function setTl($tl) {
+        $this->tl = $tl;
+    }
+    public function setGender($gender) {
+        $this->gender = $gender;
+    }
+    public function setEmail($email) {
+        $this->email = $email;
+    }
+    public function setTelepon($telp) {
+        $this->telp = $telp;
+    }
 
-	function getId()
-	{
-		return $this->id;
-	}
-	function getNim()
-	{
-		return $this->nim;
-	}
-	function getNama()
-	{
-		return $this->nama;
-	}
-	function getTempat()
-	{
-		return $this->tempat;
-	}
-	function getTl()
-	{
-		return $this->tl;
-	}
-	function getGender()
-	{
-		return $this->gender;
-	}
+    public function getId() {
+        return $this->id;
+    }
+    public function getNim() {
+        return $this->nim;
+    }
+    public function getNama() {
+        return $this->nama;
+    }
+    public function getTempat() {
+        return $this->tempat;
+    }
+    public function getTl() {
+        return $this->tl;
+    }
+    public function getGender() {
+        return $this->gender;
+    }
+    public function getEmail() {
+        return $this->email;
+    }
+    public function getTelepon() {
+        return $this->telp;
+    }
 }
